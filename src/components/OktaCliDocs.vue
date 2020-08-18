@@ -1,15 +1,27 @@
 <template>
-  <div class="hello">
-    <h2>{{ platform }}</h2>
+  <div>
+    <b-container>
+      <b-row>
+        <b-col v-for="component in platformOrder" :key="component">
+          <component :key="component" :is="component"/>
+        </b-col>
+      </b-row>
+    </b-container>
   </div>
 </template>
 
 <script>
 
 import os from 'platform-detect/os.mjs'
+import Windows from '@/components/Windows.vue'
+import Mac from '@/components/Mac.vue'
+import Linux from '@/components/Linux.vue'
 
 export default {
   name: 'HelloWorld',
+  components: {
+    Windows, Mac, Linux
+  },
   props: {
     msg: String
   },
@@ -18,16 +30,19 @@ export default {
     }
   },
   computed: {
-    platform() {
-      let _os = 'UNKNOWN';
-      if (os.windows) {
-        _os = 'windows';
-      } else if (os.linux) {
-        _os = 'linux';
+    platformOrder() {
+      let platforms = ['windows', 'linux', 'mac'];
+      if (os.linux) {
+        this.move(platforms, 1, 0);
       } else if (os.macos) {
-        _os = 'macos';
+        this.move(platforms, 2, 0);
       }
-      return _os;
+      return platforms;
+    }
+  },
+  methods: {
+    move(array, from, to) {
+      array.splice(to, 0, array.splice(from, 1)[0]);
     }
   }
 }
