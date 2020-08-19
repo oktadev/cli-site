@@ -1,10 +1,12 @@
 <template>
     <div>
-        <h2>Mac</h2>
+        <pre>
+            brew cask install oktadeveloper/tap/okta
+        </pre>
     </div>
 </template>
 <script>
 export default {
-    name: 'macos'
+    name: 'macOS'
 }
 </script>

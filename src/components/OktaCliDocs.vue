@@ -1,26 +1,25 @@
 <template>
   <div>
-    <b-container>
-      <b-row>
-        <b-col v-for="component in platformOrder" :key="component">
-          <component :key="component" :is="component"/>
-        </b-col>
-      </b-row>
-    </b-container>
+    <div>
+      <b-tabs content-class="mt-3" pills fill>
+        <b-tab v-for="component in platformOrder" :key="component" :title="component"><component :key="component" :is="component"/></b-tab>
+      </b-tabs>
+    </div>
   </div>
 </template>
-
 <script>
 
 import os from 'platform-detect/os.mjs'
 import Windows from '@/components/Windows.vue'
-import Mac from '@/components/Mac.vue'
+import MacOS from '@/components/Mac.vue'
 import Linux from '@/components/Linux.vue'
 
 export default {
-  name: 'HelloWorld',
+  name: 'Home',
   components: {
-    Windows, Mac, Linux
+    'Windows': Windows, 
+    'MacOS': MacOS, 
+    'Linux': Linux
   },
   props: {
     msg: String
@@ -31,10 +30,10 @@ export default {
   },
   computed: {
     platformOrder() {
-      let platforms = ['windows', 'linux', 'mac'];
-      if (os.linux) {
+      let platforms = ['MacOS', 'Windows', 'Linux'];
+      if (os.windows) {
         this.move(platforms, 1, 0);
-      } else if (os.macos) {
+      } else if (os.linux) {
         this.move(platforms, 2, 0);
       }
       return platforms;

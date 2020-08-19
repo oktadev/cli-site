@@ -1,10 +1,12 @@
 <template>
     <div>
-        <h2>Windows</h2>
+        <pre>
+            choco install okta --version=0.4.0
+        </pre>
     </div>
 </template>
 <script>
 export default {
-    name: 'windows'
+    name: 'Windows'
 }
 </script>
