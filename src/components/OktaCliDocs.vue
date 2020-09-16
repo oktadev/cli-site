@@ -15,8 +15,7 @@
           </div>
           <p/>
           <p class="text-left">Create an Okta org, setup an Okta Application, and populate a code sample all with one command:</p>
-          <asciiplayer class="text-left" id="dIEdlbxZTJy0cECxxHPqMldEI" t="4" speed="2"></asciiplayer>
-          <!-- <a href="https://asciinema.org/a/dIEdlbxZTJy0cECxxHPqMldEI?t=5"><img src="https://asciinema.org/a/dIEdlbxZTJy0cECxxHPqMldEI.png" width="836"/></a> -->
+          <asciiplayer class="text-left" id="gnxnMVLjTEuSCYuFNlZVYsQw2" t="4" speed="2"></asciiplayer>
         </b-col>
       </b-row>
     </b-container>
