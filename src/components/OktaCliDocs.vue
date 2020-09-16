@@ -1,10 +1,25 @@
 <template>
   <div>
-    <div>
-      <b-tabs content-class="mt-3" pills fill>
-        <b-tab v-for="component in platformOrder" :key="component" :title="component"><component :key="component" :is="component"/></b-tab>
-      </b-tabs>
-    </div>
+    <b-container fluid>
+      <b-row>
+        <b-col>
+          <h2 class="text-left">Okta CLI Documentation</h2>
+          <p class="text-left">The Okta CLI is the easiest way to get started with Okta!</p>
+          <p class="text-left">Get started with installation on your platform:</p>
+          <div>
+            <b-card no-body>
+              <b-tabs card fill>
+                <b-tab v-for="component in platformOrder" :key="component" :title="component"><component :key="component" :is="component"/></b-tab>
+              </b-tabs>
+            </b-card>
+          </div>
+          <p/>
+          <p class="text-left">Create an Okta org, setup an Okta Application, and populate a code sample all with one command:</p>
+          <asciiplayer class="text-left" id="dIEdlbxZTJy0cECxxHPqMldEI" t="4" speed="2"></asciiplayer>
+          <!-- <a href="https://asciinema.org/a/dIEdlbxZTJy0cECxxHPqMldEI?t=5"><img src="https://asciinema.org/a/dIEdlbxZTJy0cECxxHPqMldEI.png" width="836"/></a> -->
+        </b-col>
+      </b-row>
+    </b-container>
   </div>
 </template>
 <script>
@@ -14,19 +29,26 @@ import Windows from '@/components/Windows.vue'
 import MacOS from '@/components/Mac.vue'
 import Linux from '@/components/Linux.vue'
 
+import asciiplayer from '@/components/asciiplayer.vue'
+
 export default {
   name: 'Home',
   components: {
     'Windows': Windows, 
     'MacOS': MacOS, 
-    'Linux': Linux
+    'Linux': Linux,
+    'asciiplayer': asciiplayer
   },
   props: {
     msg: String
   },
   data() {
     return {
+
     }
+  },
+  mounted() {
+    
   },
   computed: {
     platformOrder() {
@@ -62,5 +84,9 @@ li {
 }
 a {
   color: #42b983;
+}
+.CodeMirror {
+  border: 1px solid #eee;
+  height: auto;
 }
 </style>
