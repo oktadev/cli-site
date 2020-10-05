@@ -1,4 +1,4 @@
-# vue-test
+# Okta CLI Website
 
 ## Project setup
 ```
