@@ -3,7 +3,7 @@
     <b-container fluid>
       <b-row>
         <b-col>
-          <h2 class="text-left">Okta CLI Documentation</h2>
+          <h2 class="text-left">Okta CLI (beta) Documentation</h2>
           <p class="text-left">The Okta CLI is the easiest way to get started with Okta!</p>
           <p class="text-left">Get started with installation on your platform:</p>
           <div>
