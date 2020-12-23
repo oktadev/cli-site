@@ -15,7 +15,7 @@ export default {
                 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 
                 ## Then:
-                brew cask install oktadeveloper/tap/okta`,
+                brew install --cask oktadeveloper/tap/okta`,
             cmOptions: {
                 mode: 'text/x-sh',
                 lineNumbers: true,
