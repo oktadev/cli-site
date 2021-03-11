@@ -3,9 +3,16 @@
     <b-container fluid>
       <b-row>
         <b-col>
-          <h2 class="text-left">Okta CLI (beta) Documentation</h2>
-          <p class="text-left">The Okta CLI is the easiest way to get started with Okta!</p>
-          <p class="text-left">Get started with installation on your platform:</p>
+          <b-row>
+            <b-col cols="1" class="logo">
+              <img src="/logo.svg" height="100">
+            </b-col>
+            <b-col >
+              <h2 class="text-left">Okta CLI (beta) Documentation</h2>
+              <p class="text-left">The Okta CLI is the easiest way to get started with Okta!</p>
+              <p class="text-left">Get started with installation on your platform:</p>
+            </b-col>
+          </b-row>
           <div>
             <b-card no-body>
               <b-tabs card fill>
@@ -87,5 +94,9 @@ a {
 .CodeMirror {
   border: 1px solid #eee;
   height: auto;
+}
+
+.logo {
+  max-width: 120px;
 }
 </style>
