@@ -15,7 +15,7 @@ export default {
                 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 
                 ## install the package
-                flatpak install com.okta.developer.CLI
+                flatpak install flathub com.okta.developer.CLI
 
                 ## add this to your appropriate dot file
                 alias okta="flatpak run com.okta.developer.CLI"`,
