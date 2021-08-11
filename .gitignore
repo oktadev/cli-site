@@ -1,6 +1,9 @@
 .DS_Store
 node_modules
+vendor
+.jekyll-cache
 
+dist
 
 # local env files
 .env.local

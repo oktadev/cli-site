@@ -1,0 +1,13 @@
+{%- if jekyll.environment == 'production' and site.google_tag -%}{%- include google-tag-body.html -%}{%- endif -%}
+{% include svg-assets.html %}
+<header class="site-header py-2 px-3 py-md-3 pr-md-9 pl-md-6">
+  <nav class="d-flex flex-row flex-justify-between flex-items-center">
+    <div>
+      <a class="site-logo no-wrap" href="{{ "/" | relative_url }}" aria-label="Homepage">Okta <span class="d-none">CLI</span><span class="blink" role="presentation">_</span></a>
+    </div>
+    <div>
+      <a class="d-inline-block ml-6" href="{{ "/manual/" | relative_url }}">Manual</a>
+      <a class="d-inline-block ml-6" href="https://github.com/okta/okta-cli/releases">Release Notes</a>
+    </div>
+  </nav>
+</header>

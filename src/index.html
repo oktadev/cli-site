@@ -1,0 +1,88 @@
+---
+# Feel free to add content and custom Front Matter to this file.
+# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
+
+layout: home
+---
+
+<div class="page-content p-3 pt-md-6 pr-md-9 pb-md-9 pl-md-9">
+  <div class="container-lg">
+    <div class="my-5">
+      <h1 class="mb-3">Okta CLI (beta) Documentation</h1>
+
+      <div>The Okta CLI is the easiest way to get started with Okta!</div>
+      <div>Get stated today by installing on your platform.</div>
+    </div>
+    <div class="install-mac d-none">
+      <pre><code class="marked-code d-flex flex-column flex-md-row flex-items-stretch"><div class="code flex-1 flex-order-2 flex-md-order-1">brew install --cask oktadeveloper/tap/okta</div><div class="marker rounded-md-3 flex-order-1 flex-md-order-2">macOS Install</div></code></pre>
+    </div>
+    <div class="install-win d-none">
+      <pre><code class="marked-code d-flex flex-column flex-md-row flex-items-stretch"><div class="code flex-1 flex-order-2 flex-md-order-1">choco install okta</div><div class="marker rounded-md-3 flex-order-1 flex-md-order-2">Windows Install</div></code></pre>
+    </div>
+    <div class="install-linux d-none">
+      <pre><code class="marked-code d-flex flex-column flex-md-row flex-items-stretch"><div class="code flex-1 flex-order-2 flex-md-order-1">flatpak install flathub com.okta.developer.CLI</div><div class="marker rounded-md-3 flex-order-1 flex-md-order-2">Linux Install</div></code></pre>
+    </div>
+    <div class="mb-6">
+      <div class="mb-2 mb-md-0"><a href="{{ "/manual/" | relative_url }}#installation">View installation instructions for all platforms<span role="presentation"> &rarr;</span></a></div>
+      <div><a href="{{ "/manual/" | relative_url }}">View all Okta CLI commands<span role="presentation"> &rarr;</span></a></div>
+    </div>
+
+    <div class="py-6">
+      <h2 class="mb-3">Getting Started</h2>
+      <pre><code class="home-terminal-command">$ <span class="terminal-animate-begin terminal-animate-type d-none">okta start spring-boot</span><span class="d-none">
+Registering for a new Okta account, if you would like to use an existing account, use 'okta login' instead.
+
+First name: </span><span class="terminal-animate-type d-none">Jamie</span><span class="d-none">
+Last name: </span><span class="terminal-animate-type d-none">Example</span><span class="d-none">
+Email address: </span><span class="terminal-animate-type d-none">jamie@example.com</span><span class="d-none">
+Company: </span><span class="terminal-animate-type d-none">Okta Test Company</span><span class="d-none">
+Creating new Okta Organization, this may take a minute:</span><span class="d-none">
+OrgUrl: https://dev-123456.okta.com
+An email has been sent to you with a verification code.
+
+Check your email
+Verification code: </span><span class="terminal-animate-type d-none">086420</span><span class="d-none">
+New Okta Account created!
+Your Okta Domain: https://dev-908973.okta.com
+To set your password open this link:
+https://dev-908973.okta.com/reset_password/drpFaK66lHuY4d1WbrFP?fromURI=/
+
+Configuring a new OIDC Application, almost done:</span><span class="terminal-animate-done d-none">
+Created OIDC application, client-id: 0oazahf9k5LDCx32C4x6
+
+Change the directory:
+    cd spring-boot
+
+Okta configuration written to: src/main/resources/application.properties
+Don't EVER commit src/main/resources/application.properties into source control
+
+Run this application with:
+    ./mvnw spring-boot:run
+
+$</span></code></pre>
+    </div>
+  </div>
+</div>
+
+<div id="marketing" class="home-marketing">
+  <div class="container-lg py-6 px-4 d-flex flex-column flex-items-center">
+    <h2 class="marketing-header mb-6">Improve your Workfow</h2>
+    <div class="d-flex flex-column flex-md-row flex-justify-between">
+      <div class="flex-1 px-2 mb-6">
+        <h3 class="mb-3">Manage All the Things</h3>
+        <p class="mb-3">Create an Okta org, manage Okta applications, and generate code samples all through the CLI.</p>
+        <div><a href="{{ "/manual/" | relative_url }}">View Okta CLI commands<span role="presentation"> &rarr;</span></a></div>
+      </div>
+      <div class="flex-1 px-2 mb-6">
+        <h3 class="mb-3">Improve Okta CLI</h3>
+        <p class="mb-3">Contribute to Okta CLI! Our Okta CLI community welcomes new contributors. We are friendly and open-source.</p>
+        <div><a href="https://github.com/okta/okta-cli">Help Improve Okta CLI<span role="presentation"> &rarr;</span></a></div>
+      </div>
+      <div class="flex-1 px-2 mb-6">
+        <h3 class="mb-3">Having Trouble?</h3>
+        <p class="mb-3">Experiencing technical difficulties? Found a bug? Report issues on GitHub.</p>
+        <div><a href="https://github.com/okta/okta-cli/issues">Log an issue on GitHub<span role="presentation"> &rarr;</span></a></div>
+      </div>
+    </div>
+  </div>
+</div>

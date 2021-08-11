@@ -1,0 +1,40 @@
+---
+layout: base
+---
+
+<div class="d-block d-lg-flex flex-lg-row">
+  <nav class="sidenav px-3 py-8 d-none d-lg-block">
+    <ul class="list-style-none my-2 mx-3">
+      {% for manual_entry in site.manual %}
+      <li class="{%- if manual_entry.subcommand -%}mt-1{%- else -%}mt-3{%- endif -%}"><a class="no-wrap {% if manual_entry.subcommand %}nav-sublink px-3{% else %}px-2{% endif %}" href="{{ manual_entry.url }}">{{ manual_entry.nav }}</a></li>
+      {% endfor %}
+    </ul>
+  </nav>
+
+  <main class="page-content rounded-md-left-3 flex-md-1 p-3 pt-md-6 pr-md-9 pb-md-9 pl-md-9">
+    <div class="page-heading d-flex flex-row flex-items-center">
+      {%- if page.title -%}
+      <h1 class="flex-1">{{ page.title }}</h1>
+      {%- endif -%}
+      <details class="details-reset details-overlay position-relative d-lg-none" role="menu">
+        <summary class="btn" aria-haspopup="true" aria-label="Show Command Navigation Menu">&#9776;</summary>
+        <div class="SelectMenu right-0">
+          <div class="SelectMenu-modal">
+            <header class="SelectMenu-header">
+              <h3 class="SelectMenu-title color-text-primary">Okta CLI Manual</h3>
+            </header>
+            <div class="SelectMnu-list SelectMenu-list--borderless overflow-y-scroll">
+              {% for manual_entry in site.manual %}
+              <a class="SelectMenu-item {% if manual_entry.subcommand %}pl-5{% endif %}" role="menuitem" href="{{ manual_entry.url }}">{{ manual_entry.nav }}</a>
+              {% endfor %}
+            </div>
+          </div>
+        </div>
+      </details>
+    </div>
+
+    <div class="markdown-body">
+      {{ content }}
+    </div>
+  </main>
+</div>

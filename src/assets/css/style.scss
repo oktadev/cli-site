@@ -1,0 +1,250 @@
+---
+# The main Sass file needs front matter to be processed by the Jekyll engine (the dashes are enough)
+---
+
+@import '@primer/css/core/index.scss';
+@import "@primer/css/select-menu/index.scss";
+
+$cli-bg-content: #182A33;
+$cli-bg-page:    #111B22;
+$cli-white:      #FFFFFF;
+$cli-pink:       #FF5F93;
+$cli-pink-dark:  #DB2D66;
+
+html, body {
+  background-color: $cli-bg-page;
+  color: $cli-white;
+}
+
+code {
+  color: $cli-white;
+  background-color: #000000;
+  font-family: ui-monospace,SFMono-Regular,SF Mono,Consolas,Liberation Mono,Menlo,monospace;
+  padding: .2em .4em;
+  border-radius: 4px;
+  overflow-x: auto !important;
+
+  pre > & {
+    display: block;
+    padding: 1.25em;
+    border-radius: 8px;
+    margin-bottom: 1.25em;
+  }
+
+  &.marked-code {
+    padding: 0;
+    .code {
+      padding: 1.25em;
+    }
+    .marker {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: $cli-white;
+      background-color: $cli-pink-dark;
+      padding: 0.5em 2.5em;
+      font-family: $body-font;
+      font-size: $body-font-size;
+      font-weight: $font-weight-semibold;
+      line-height: 20px;
+      white-space: nowrap;
+    }
+  }
+}
+
+ul {
+  padding-left: 3em;
+
+  &.list-style-none {
+    padding-left: 0;
+  }
+}
+
+
+a {
+  color: $cli-pink;
+
+  &:active, &:hover, &:visited {
+    color: $cli-pink;
+  }
+
+  nav & {
+    color: $cli-white;
+
+    &:active {
+      color: $cli-pink;
+    }
+
+    &:hover, &:visited {
+      color: $cli-white;
+    }
+
+    &.nav-sublink {
+      color: $cli-pink;
+
+      &:active, &:hover, &:visited {
+        color: $cli-pink;
+      }
+    }
+  }
+
+  nav.sidenav & {
+    text-transform: lowercase;
+  }
+}
+
+.site-header {
+  .site-logo {
+    font-size: $h1-size;
+    text-transform: lowercase;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
+.site-footer {
+  .legal {
+    border-top: 1px solid $cli-pink;
+  }
+
+  .social-links {
+    li {
+      margin-top: 1rem;
+    }
+    a {
+      color: $cli-white;
+    }
+    svg {
+      fill: $cli-pink;
+      width: 1.2rem;
+      height: 1.2rem;
+      vertical-align: middle;
+    }
+  }
+  .info-links {
+    li {
+      margin-top: 1.1rem;
+    }
+    a {
+      color: $cli-white;
+    }
+  }
+}
+
+.page-content {
+  background-color: $cli-bg-content;
+}
+.page-heading {
+  border-bottom: 1px solid $cli-white;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+
+  > h1 {
+    margin: 0;
+    padding-left: 1rem;
+    font-size: $h1-size;
+  }
+}
+
+.markdown-body {
+  & > p {
+    margin-top: 1rem;
+    padding-left: 1rem;
+  }
+  & > h1, & > h2, & > h3, & > h4, & > h5, & > h6, & > blockquote {
+    padding-left: 1rem;
+  }
+  h1 {
+    margin-top: 2.5rem;
+    margin-bottom: 0.2rem;
+    font-size: $h2-size;
+  }
+  h2 {
+    margin-top: 2.5rem;
+    margin-bottom: 0.2rem;
+    font-size: $h3-size;
+  }
+  h3 {
+    margin-top: 2.5rem;
+    margin-bottom: 0.2rem;
+    font-size: $h4-size;
+  }
+  h4 {
+    margin-top: 2.5rem;
+    margin-bottom: 0.2rem;
+    font-size: $h5-size;
+  }
+  h5 {
+    margin-top: 2.5rem;
+    margin-bottom: 0.2rem;
+    font-size: $h6-size;
+  }
+  h6 {
+    margin-top: 2.5rem;
+    margin-bottom: 0.2rem;
+  }
+}
+
+.home-content {
+  background-color: $cli-bg-content;
+}
+
+.home-terminal-command {
+  min-height: (1.5em * 31) + 2.5em;
+}
+
+.home-marketing {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:after {
+    content: ' ';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-image: url(../img/computer.jpg);
+    background-position: center center;
+    background-size: cover;
+    opacity: 0.2;
+  }
+
+  > div {
+    z-index: 200;
+  }
+
+  .marketing-header {
+    font-size: $h1-size;
+
+    &:after {
+      content: ' ';
+      display: block;
+      width: 75%;
+      height: 0.5rem;
+      margin: 0.5rem auto 0 auto;
+      background-color: $cli-pink;
+    }
+  }
+
+}
+
+.blink {
+  animation: blink-animation 1.5s steps(5, start) infinite;
+  -webkit-animation: blink-animation 1.5s steps(5, start) infinite;
+}
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+@-webkit-keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
