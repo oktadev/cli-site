@@ -1,5 +1,5 @@
 ---
-title: okta app config
+title: okta apps config
 nav: config
 layout: manual
 subcommand: true
