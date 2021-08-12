@@ -1,11 +1,11 @@
 ---
-title: okta app create
+title: okta apps create
 nav: create
 layout: manual
 subcommand: true
 ---
 
-Create an new Okta app
+Create a new Okta app
 
 ## Usage
 ```bash

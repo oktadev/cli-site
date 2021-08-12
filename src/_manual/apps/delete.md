@@ -1,5 +1,5 @@
 ---
-title: okta app delete
+title: okta apps delete
 nav: delete
 layout: manual
 subcommand: true
