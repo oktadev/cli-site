@@ -62,6 +62,10 @@ Download the binary for your OS from the [releases](https://github.com/okta/okta
 
 Run `okta --help` or `okta help <command>` for more details.
 
+Okta CLI command autocompletes in [Fig.io](https://fig.io/) terminals. In a terminal that has Fig support, you can autocomplete Okta CLI commands and get inline documentation.
+
+![Autocompletion help examples when using Fig termials](/assets/img/autocompletions.jpg)
+
 ## Sign Up For a Free Okta Developer Account
 
 Run `okta register` to sign up for a new account.  You will be prompted for your name and email address.  Account activation information will be emailed to you.
