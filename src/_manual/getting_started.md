@@ -62,10 +62,6 @@ Download the binary for your OS from the [releases](https://github.com/okta/okta
 
 Run `okta --help` or `okta help <command>` for more details.
 
-Okta CLI command autocompletes in [Fig.io](https://fig.io/) terminals. In a terminal that has Fig support, you can autocomplete Okta CLI commands and get inline documentation.
-
-![Autocompletion help examples when using Fig termials](/assets/img/autocompletions.jpg)
-
 ## Sign Up For a Free Okta Developer Account
 
 Run `okta register` to sign up for a new account.  You will be prompted for your name and email address.  Account activation information will be emailed to you.
@@ -83,6 +79,13 @@ The Okta CLI tool can create Okta OAuth 2.0 / OIDC Applications for you with a f
 - Service - Machine to Machine services
 
 Run `okta apps create` and you will be prompted for the required information.
+
+## Fig terminal autocompletion
+
+Okta CLI command autocompletes in [Fig.io](https://fig.io/) terminals. In a terminal that has Fig support, you can autocomplete Okta CLI commands and get inline documentation.
+
+<img class="autocompletion" src="/assets/img/all-commands.jpg" alt="Autocompletion commands when using Fig termials"/>
+<img class="autocompletion" src="/assets/img/create-apps.jpg" alt="Autocompletion context for creating Okta apps"/>
 
 ## Bash / Zsh Completion
 
