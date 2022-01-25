@@ -4,7 +4,7 @@ nav: start
 layout: manual
 ---
 
-Creates an Okta Sample Application
+Creates an [Okta Sample Application](https://github.com/okta-samples/)
 
 ## Usage
 ```bash
@@ -13,7 +13,7 @@ okta start [-hV] [--batch] [--verbose] [<sampleName>]
 
 ## Options
 ```
-      [<sampleName>]    Name of sample
+      [<sampleName>]    Name of sample (Available samples are react, angular, vue, react-native, spring-boot, aspnet-core3)
 ```
 
 ## Shared Options
