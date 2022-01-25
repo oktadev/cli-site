@@ -80,6 +80,13 @@ The Okta CLI tool can create Okta OAuth 2.0 / OIDC Applications for you with a f
 
 Run `okta apps create` and you will be prompted for the required information.
 
+## Fig terminal autocompletion
+
+Okta CLI command autocompletes in [Fig.io](https://fig.io/) terminals. In a terminal that has Fig support, you can autocomplete Okta CLI commands and get inline documentation.
+
+<img class="autocompletion" src="/assets/img/all-commands.jpg" alt="Autocompletion commands when using Fig termials"/>
+<img class="autocompletion" src="/assets/img/create-apps.jpg" alt="Autocompletion context for creating Okta apps"/>
+
 ## Bash / Zsh Completion
 
 If you have "bash-completion" installed run one of the following commands:
