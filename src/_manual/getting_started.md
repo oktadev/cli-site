@@ -51,7 +51,7 @@ curl https://raw.githubusercontent.com/okta/okta-cli/master/cli/src/main/scripts
 ### Windows via Chocolatey
 
 ```bash
-choco install okta --version=0.8.0
+choco install okta
 ```
 
 ### Manual Installation
