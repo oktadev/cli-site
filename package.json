@@ -4,6 +4,6 @@
   "private": true,
   "scripts": {},
   "dependencies": {
-    "@primer/css": "^17.5.2"
+    "@primer/css": "^19.5.0"
   }
 }
