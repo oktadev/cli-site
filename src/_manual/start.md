@@ -4,7 +4,7 @@ nav: start
 layout: manual
 ---
 
-Creates an Okta Sample Application
+Creates an [Okta Sample Application](https://github.com/okta-samples/). Available samples are react, angular, vue, react-native, spring-boot, and aspnet-core3.
 
 ## Usage
 ```bash
