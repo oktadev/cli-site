@@ -253,3 +253,44 @@ img.autocompletion {
   width: 100%;
   max-width: 800px;
 }
+
+// Deprecation notice styling
+.deprecation-notice {
+  background-color: #fcf8e3;
+  border: 1px solid #faebcc;
+  color: #8a6d3b;
+  padding: 1rem;
+  border-radius: 4px;
+  margin-bottom: 1.25rem;
+
+  h4 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    color: #8a6d3b;
+    font-size: 1.1rem;
+  }
+
+  p {
+    margin-bottom: 0.625rem;
+    color: #8a6d3b;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  ul {
+    margin-bottom: 0.625rem;
+    padding-left: 1.5rem;
+    color: #8a6d3b;
+  }
+
+  a {
+    color: #7a5a2f;
+    text-decoration: underline;
+
+    &:hover, &:visited, &:active {
+      color: #7a5a2f;
+    }
+  }
+}
