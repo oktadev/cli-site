@@ -1,9 +1,0 @@
-{
-  "name": "okta-cli-site",
-  "version": "1.0.0",
-  "private": true,
-  "scripts": {},
-  "dependencies": {
-    "@primer/css": "^17.5.2"
-  }
-}
